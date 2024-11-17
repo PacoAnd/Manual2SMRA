@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #f9b8f8;
+    background-color: hwb(52 34% 60%);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
