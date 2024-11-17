@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual CSS: Propiedad Display</title>
+    <!-- Vincular el archivo CSS externo -->
+    <link rel="stylesheet" href="CSS/display.css">
+</head>
+
+<body>
+    <!-- Se incluye el menú de navegación en todas las páginas mediante el iframe -->
+    <iframe src="aux/nav.html" width="100%" height="100px" frameborder="0"></iframe>
+
+    <header>
+
+        <h1>Manual sobre la Propiedad CSS <code>display</code></h1>
+        <p>Este manual explica cómo funciona la propiedad CSS <code>display</code>, los valores más comunes y su impacto
+            en el diseño de los elementos HTML.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>¿Qué es la propiedad <code>display</code>?</h2>
+            <p>La propiedad <code>display</code> determina cómo se comporta un elemento dentro del flujo del documento y
+                cómo se renderiza en el navegador.</p>
+            <p>Los valores más comunes son:</p>
+            <ul>
+                <li><strong><code>block</code>:</strong> El elemento ocupa todo el ancho disponible y comienza en una
+                    nueva línea.</li>
+                <li><strong><code>inline</code>:</strong> El elemento ocupa solo el espacio necesario y se sitúa en la
+                    misma línea que otros elementos.</li>
+                <li><strong><code>inline-block</code>:</strong> Combina características de <code>inline</code> y
+                    <code>block</code>.</li>
+                <li><strong><code>none</code>:</strong> Oculta el elemento, eliminándolo del flujo del documento.</li>
+                <li><strong><code>flex</code>:</strong> Convierte el contenedor en un modelo flexible para alinear y
+                    distribuir elementos.</li>
+                <li><strong><code>grid</code>:</strong> Convierte el contenedor en un modelo de cuadrícula con filas y
+                    columnas.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ejemplos Prácticos</h2>
+
+            <h3>Valor <code>block</code></h3>
+            <div class="example block">Elemento con display: block</div>
+
+            <h3>Valor <code>inline</code></h3>
+            <span class="example inline">Elemento con display: inline</span>
+            <span class="example inline">Otro inline</span>
+
+            <h3>Valor <code>inline-block</code></h3>
+            <div class="example inline-block">Elemento con display: inline-block</div>
+            <div class="example inline-block">Otro inline-block</div>
+
+            <h3>Valor <code>none</code></h3>
+            <div class="example none">Elemento con display: none (no visible)</div>
+
+            <h3>Valor <code>flex</code></h3>
+            <div class="flex-container">
+                <div>Item Flex 1</div>
+                <div>Item Flex 2</div>
+                <div>Item Flex 3</div>
+            </div>
+
+            <h3>Valor <code>grid</code></h3>
+            <div class="grid-container">
+                <div class="grid-item">Item Grid 1</div>
+                <div class="grid-item">Item Grid 2</div>
+                <div class="grid-item">Item Grid 3</div>
+            </div>
+        </section>
+    </main>
+
+    <iframe src="aux/footer.html" width="100%" height="100px" frameborder="0"></iframe>
+
+</body>
+
+</html>

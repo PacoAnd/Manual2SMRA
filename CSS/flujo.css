@@ -1,0 +1,81 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    background: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+main {
+    padding: 20px;
+}
+section {
+    margin-bottom: 20px;
+}
+
+/* Flujo Normal */
+.block {
+    display: block;
+    background: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.inline {
+    display: inline;
+    background: lightgreen;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+/* Elementos Flotantes */
+.float {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background: coral;
+}
+.clear {
+    clear: both;
+}
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    background: lightgray;
+    padding: 10px;
+}
+.flex-container div {
+    background: lightcoral;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background: beige;
+    padding: 10px;
+}
+.grid-item {
+    background: lightcoral;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

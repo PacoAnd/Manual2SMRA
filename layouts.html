@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual CSS: Layouts</title>
+    <!-- Vincular el archivo CSS externo -->
+    <link rel="stylesheet" href="CSS/layouts.css">
+</head>
+
+<body>
+    <!-- Se incluye el menú de navegación en todas las páginas mediante el iframe -->
+    <iframe src="aux/nav.html" width="100%" height="100px" frameborder="0"></iframe>
+
+    <header>
+        <h1>Manual sobre los Distintos Layouts en CSS</h1>
+        <p>Este manual explica cómo crear diferentes tipos de diseños o "layouts" utilizando CSS. Incluye ejemplos con
+            <code>block</code>, <code>flexbox</code>, <code>grid</code> y cómo evitar el desplazamiento horizontal no
+            deseado.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>¿Qué es un Layout en CSS?</h2>
+            <p>En CSS, un layout es el modelo que define la disposición de los elementos en la página. Los tres layouts
+                más comunes son:</p>
+            <ul>
+                <li><strong>Layout de Bloques (block):</strong> Los elementos se apilan verticalmente ocupando el ancho
+                    completo de su contenedor.</li>
+                <li><strong>Layout Flexbox:</strong> Un modelo de caja flexible que facilita la alineación y
+                    distribución de los elementos dentro de un contenedor.</li>
+                <li><strong>Layout Grid:</strong> Un sistema de diseño basado en una cuadrícula de filas y columnas.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Evitar el Desplazamiento Horizontal</h2>
+            <p>Es importante asegurarse de que el contenido se ajuste al ancho de la pantalla sin causar desplazamiento
+                horizontal. Para evitarlo:</p>
+            <ul>
+                <li>Usa unidades relativas como <code>vw</code> o <code>%</code> para los anchos.</li>
+                <li>Utiliza <code>box-sizing: border-box;</code> para que los márgenes y rellenos no aumenten el tamaño
+                    total de los elementos.</li>
+                <li>Evita los anchos fijos que superen el 100% del ancho de la pantalla.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ejemplos de Layouts</h2>
+
+            <h3>Layout de Bloques</h3>
+            <div class="layout-block">
+                <div class="example">Elemento 1</div>
+                <div class="example">Elemento 2</div>
+                <div class="example">Elemento 3</div>
+            </div>
+
+            <h3>Layout Flexbox</h3>
+            <div class="flex-container">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+
+            <h3>Layout Grid</h3>
+            <div class="grid-container">
+                <div class="grid-item">Grid Item 1</div>
+                <div class="grid-item">Grid Item 2</div>
+                <div class="grid-item">Grid Item 3</div>
+            </div>
+        </section>
+    </main>
+
+    <iframe src="aux/footer.html" width="100%" height="100px" frameborder="0"></iframe>
+
+</body>
+
+</html>

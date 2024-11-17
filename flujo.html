@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Flujos en el Navegador</title>
+    <!-- Vincular el archivo CSS externo -->
+    <link rel="stylesheet" href="CSS/flujo.css">
+</head>
+
+<body>
+    <!-- Se incluye el menú de navegación en todas las páginas mediante el iframe -->
+    <iframe src="aux/nav.html" width="100%" height="100px" frameborder="0"></iframe>
+
+    <header>
+        <h1>Manual sobre el Flujo de Elementos en el Navegador</h1>
+        <p>Este manual explica cómo los elementos HTML interactúan dentro de una página web, dependiendo de su modelo de
+            diseño, sus propiedades CSS y el flujo del documento.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Flujo Normal de los Elementos</h2>
+            <p>El flujo de los elementos define cómo se colocan en la ventana del navegador de manera predeterminada.
+                Existen dos tipos principales de flujo:</p>
+            <ul>
+                <li><strong>Elementos en bloque:</strong> Ocupan todo el ancho disponible y se apilan uno debajo del
+                    otro. Ejemplos: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>.</li>
+                <li><strong>Elementos en línea:</strong> Ocupan solo el espacio necesario para su contenido y se colocan
+                    uno al lado del otro en la misma línea. Ejemplos: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>,
+                    <code>&lt;strong&gt;</code>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Propiedades que Afectan el Flujo</h2>
+            <p>Algunas propiedades CSS pueden modificar el flujo normal de los elementos, alterando su comportamiento y
+                disposición:</p>
+            <ul>
+                <li><strong><code>display</code>:</strong> Define si un elemento es bloque, en línea, flex, grid, etc.
+                </li>
+                <li><strong><code>float</code>:</strong> Permite alinear elementos a la izquierda o derecha, sacándolos
+                    del flujo normal.</li>
+                <li><strong><code>clear</code>:</strong> Evita que un elemento se posicione junto a elementos flotantes.
+                </li>
+                <li><strong><code>position</code>:</strong> Cambia la posición de un elemento (estática, relativa,
+                    absoluta, fija o sticky).</li>
+                <li><strong><code>flexbox</code>:</strong> Organiza elementos en un diseño flexible de filas o columnas.
+                </li>
+                <li><strong><code>grid</code>:</strong> Organiza los elementos en un diseño de cuadrícula con filas y
+                    columnas.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ejemplos Prácticos</h2>
+            <h3>Flujo Normal</h3>
+            <!-- Elementos que siguen el flujo normal -->
+            <div class="block">Soy un elemento en bloque</div>
+            <span class="inline">Soy un elemento en línea</span>
+            <span class="inline">Otro en línea</span>
+
+            <h3>Elementos Flotantes</h3>
+            <!-- Elementos que flotan hacia la izquierda -->
+            <div class="float">Flotante 1</div>
+            <div class="float">Flotante 2</div>
+            <div class="block clear">Soy un bloque debajo de flotantes (con clear)</div>
+
+            <h3>Flexbox</h3>
+            <!-- Contenedor flexible para alinear elementos -->
+            <div class="flex-container">
+                <div>Item Flex 1</div>
+                <div>Item Flex 2</div>
+                <div>Item Flex 3</div>
+            </div>
+
+            <h3>Grid</h3>
+            <!-- Contenedor de cuadrícula -->
+            <div class="grid-container">
+                <div class="grid-item">Item Grid 1</div>
+                <div class="grid-item">Item Grid 2</div>
+                <div class="grid-item">Item Grid 3</div>
+            </div>
+        </section>
+    </main>
+    <iframe src="aux/footer.html" width="100%" height="100px" frameborder="0"></iframe>
+
+</body>
+
+</html>

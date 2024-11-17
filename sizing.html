@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicación de Box-Sizing en CSS</title>
+    <link rel="stylesheet" href="css/sizing.css">
+</head>
+
+<body>
+    <!-- Se incluye el menú de navegación en todas las páginas mediante el iframe -->
+    <iframe src="aux/nav.html" width="100%" height="100px" frameborder="0"></iframe>
+
+
+    <header>
+        <h1>Entendiendo Box-Sizing en CSS</h1>
+        <p>Esta es una guía para comprender cómo funciona la propiedad CSS <code>box-sizing</code> en los elementos
+            HTML.</p>
+    </header>
+    <main>
+        <section id="introduccion">
+            <h2>¿Qué es <code>box-sizing</code>?</h2>
+            <p>La propiedad <code>box-sizing</code> en CSS determina cómo se calculan las dimensiones de los elementos
+                HTML (su ancho y alto). Por defecto, el tamaño de los elementos incluye solo el área de contenido, pero
+                con <code>box-sizing</code> podemos cambiar esta regla para que también se incluyan el borde y el
+                relleno en las dimensiones totales del elemento.</p>
+        </section>
+
+        <section id="valores">
+            <h2>Valores de <code>box-sizing</code></h2>
+            <p>Existen dos valores principales que puede tomar la propiedad <code>box-sizing</code>:</p>
+            <ul>
+                <li><strong><code>content-box</code></strong>: Este es el valor por defecto. El tamaño del elemento solo
+                    incluye el contenido, y el borde y el relleno se agregan fuera de ese tamaño.</li>
+                <li><strong><code>border-box</code></strong>: En este caso, el tamaño del elemento incluye el contenido,
+                    el borde y el relleno, lo que hace que el tamaño total sea más fácil de controlar.</li>
+            </ul>
+        </section>
+
+        <section id="ejemplos">
+            <h2>Ejemplos prácticos</h2>
+
+            <!-- Ejemplo con content-box -->
+            <h3>1. Uso de <code>content-box</code></h3>
+            <div class="example-box content-box">
+                <p>Ejemplo con <code>content-box</code></p>
+                <p><strong>Detalles:</strong> El tamaño total será mayor a 300px de ancho y 150px de alto, porque el
+                    borde y el relleno no están incluidos en el tamaño del elemento.</p>
+            </div>
+
+            <!-- Ejemplo con border-box -->
+            <h3>2. Uso de <code>border-box</code></h3>
+            <div class="example-box border-box">
+                <p>Ejemplo con <code>border-box</code></p>
+                <p><strong>Detalles:</strong> El tamaño total de la caja es 300px de ancho y 150px de alto, incluyendo
+                    el borde y el relleno dentro de esas dimensiones.</p>
+            </div>
+
+            <!-- Ejemplo con box-sizing aplicado globalmente -->
+            <h3>3. Aplicación global de <code>box-sizing: border-box</code></h3>
+            <div class="example-box global-box">
+                <p>Ejemplo con <code>box-sizing: border-box</code> aplicado globalmente</p>
+                <p><strong>Detalles:</strong> Todos los elementos de la página se comportan como si tuvieran
+                    <code>box-sizing: border-box</code> activado, haciendo más fácil el control del tamaño total de los
+                    elementos.</p>
+            </div>
+        </section>
+
+        <section id="resumen">
+            <h2>Resumen y Buenas Prácticas</h2>
+            <p>Se recomienda usar <code>box-sizing: border-box</code> globalmente, ya que facilita el control de los
+                tamaños y evita problemas de desbordamiento.</p>
+        </section>
+    </main>
+    <iframe src="aux/footer.html" width="100%" height="100px" frameborder="0"></iframe>
+
+</body>
+
+</html>

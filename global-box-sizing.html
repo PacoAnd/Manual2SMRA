@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Box-Sizing Global</title>
+    <link rel="stylesheet" href="css/global-box-sizing.css">
+</head>
+
+<body>
+    <!-- Se incluye el menú de navegación en todas las páginas mediante el iframe -->
+    <iframe src="aux/nav.html" width="100%" height="100px" frameborder="0"></iframe>
+
+    <header>
+        <h1>Ejemplo Exhaustivo de <code>box-sizing: border-box</code> Global</h1>
+        <p>Este ejemplo muestra cómo la propiedad <code>box-sizing: border-box</code> aplicada globalmente afecta a
+            varios tipos de elementos HTML.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cajas con Contenido y Bordes</h2>
+            <div class="box example">
+                <p>Una caja con <code>box-sizing: border-box</code> aplicada globalmente.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Listas con Bordes y Rellenos</h2>
+            <ul class="list-example">
+                <li>Elemento de lista 1</li>
+                <li>Elemento de lista 2</li>
+                <li>Elemento de lista 3</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Botones con Espaciado Interno</h2>
+            <button class="btn-example">Botón 1</button>
+            <button class="btn-example">Botón 2</button>
+        </section>
+
+        <section>
+            <h2>Formulario con Inputs</h2>
+            <form action="#">
+                <input type="text" placeholder="Texto aquí...">
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <iframe src="aux/footer.html" width="100%" height="100px" frameborder="0"></iframe>
+
+</body>
+
+</html>

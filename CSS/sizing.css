@@ -1,0 +1,93 @@
+/* Resetear margenes y padding para evitar diferencias en navegadores */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+/* Estilos para los ejemplos */
+.example-box {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border: 5px solid #000;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    display: inline-block;
+    box-sizing: content-box; /* Valor por defecto */
+}
+
+/* Estilos específicos para content-box */
+.content-box {
+    background-color: lightblue;
+}
+
+/* Estilos específicos para border-box */
+.border-box {
+    background-color: lightcoral;
+    box-sizing: border-box;
+}
+
+/* Aplicación global de box-sizing border-box */
+.global-box {
+    background-color: lightgreen;
+    box-sizing: border-box; /* Se aplica globalmente */
+}
+
+/* Diferenciación visual */
+.example-box p {
+    font-size: 0.9rem;
+    color: black;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
