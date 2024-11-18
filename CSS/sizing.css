@@ -15,15 +15,21 @@ body {
 }
 
 header {
-    background-color: hwb(52 34% 60%);
+    background-color: hwb(125 5% 75%);
+    color: white;
     padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 h1 {
     font-size: 2rem;
-    color: #333;
+    color: #efe8e8;
+}
+
+header p {
+    font-size: 1rem;
+    color: #efe8e8;
 }
 
 p {
@@ -34,6 +40,11 @@ p {
 /* Estilos para las secciones */
 section {
     margin-bottom: 30px;
+}
+#introduccion img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
